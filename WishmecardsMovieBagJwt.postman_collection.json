@@ -1,0 +1,76 @@
+{
+	"variables": [],
+	"info": {
+		"name": "WishmecardsMovieBagJwt",
+		"_postman_id": "caf1bf01-723c-b36b-927a-8ca06435645a",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3500/api/auth/login",
+			"request": {
+				"url": "http://localhost:3500/api/auth/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\":\"rameshelava@gmail.com\",\n\"password\":\"elavarasan\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3500/api/movies",
+			"request": {
+				"url": "http://localhost:3500/api/movies",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1ODYwNjI5NzUsIm5iZiI6MTU4NjA2Mjk3NSwianRpIjoiYzE2ZmY1NTItZTkwOS00MTI0LTg4N2MtYmIxZGRiNjZiMjRmIiwiZXhwIjoxNTg2NjY3Nzc1LCJpZGVudGl0eSI6IjVlODhiNGNlNjQ2YjE0OTc2ZTFjYTRlNSIsImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyJ9.HmitXCKL_UoHYy5UbA__esNPouG4s9bOPRiq489vp6Q",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"The Dark Knight\",\n    \"casts\": [\"Christian Bale\", \"Heath Ledger\", \"Aaron Eckhart\", \"Michael Caine\"],\n    \"genres\": [\"Action\", \"Crime\", \"Drama\"]\n\t\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3500/api/auth/signup",
+			"request": {
+				"url": "http://localhost:3500/api/auth/signup",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\":\"rameshelava@gmail.com\",\n\"password\":\"elavarasan\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
